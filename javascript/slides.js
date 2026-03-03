@@ -83,7 +83,6 @@ class Slide
 
         if(event.type == "mouseup")
             moveType = "mousemove";
-
         else
             moveType = "touchmove";
 

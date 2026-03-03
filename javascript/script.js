@@ -1,15 +1,15 @@
-import AtivaTab from "/javascript/ativa-tab.js";
-import AtivaAcordion from "/javascript/ativa-acordion.js";
-import ScrollSuave from "/javascript/scroll-suave.js";
-import AnimaScroll from "/javascript/anima-scroll.js";
-import Modal from "/javascript/modal.js";
-import Tooltip from "/javascript/tooltip.js";
-import DropdownMenu from "/javascript/dropdown-menu.js";
-import MenuMobile from "/javascript/menu-mobile.js";
-import Funcionamento from "/javascript/funcionamento.js";
-import criarAnimais from "/javascript/fetch-animais.js";
-import fetchBitcoin from "/javascript/fetch-bitcoin.js";
-import SlideNav from "/javascript/slides.js";
+import AtivaTab from "./ativa-tab.js";
+import AtivaAcordion from "./ativa-acordion.js";
+import ScrollSuave from "./scroll-suave.js";
+import AnimaScroll from "./anima-scroll.js";
+import Modal from "./modal.js";
+import Tooltip from "./tooltip.js";
+import DropdownMenu from "./dropdown-menu.js";
+import MenuMobile from "./menu-mobile.js";
+import Funcionamento from "./funcionamento.js";
+import criarAnimais from "./fetch-animais.js";
+import fetchBitcoin from "./fetch-bitcoin.js";
+import SlideNav from "./slides.js";
 
 const scrollSuave = new ScrollSuave("[data-menu='suave'] a[href^='#']");
 scrollSuave.init();
@@ -26,7 +26,7 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-criarAnimais("/javascript/animaisAPI.json", ".numeros-animais");
+criarAnimais("./animaisAPI.json", ".numeros-animais");
 
 fetchBitcoin("https://blockchain.info/ticker", ".bitcoin");
 

@@ -1,4 +1,4 @@
-export default class initMenuMobile
+export default class MenuMobile
 {
     constructor(botao, lista)
     {

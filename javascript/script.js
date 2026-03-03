@@ -26,7 +26,7 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-criarAnimais("./animaisAPI.json", ".numeros-animais");
+criarAnimais("./javascript/animaisAPI.json", ".numeros-animais");
 
 fetchBitcoin("https://blockchain.info/ticker", ".bitcoin");
 
